@@ -1,0 +1,6 @@
+abcd 73545 rub 0.5
+accd 12345 eur 0.8
+acdd 15645 usd 0.7
+bbcd 53345 eur 0.6
+aaad 23345 rub 0.2
+bbdd 14345 rub 0.3

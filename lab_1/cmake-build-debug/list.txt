@@ -1,0 +1,10 @@
+mersedes 275
+bmw 250
+audi 270
+volkswagen 255
+mini 230
+land_rover 240
+lamborghini 310
+opel 230
+ferrari 320
+ford 270
