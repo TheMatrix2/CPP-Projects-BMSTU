@@ -47,7 +47,7 @@ std::ostream & operator<<(std::ostream &out, const Deposit &deposit) {
 }
 
 bool Deposit::operator<(const Deposit &other) {
-    return _name < other._name;
+    return _name > other._name;
 }
 
 double Deposit::get_rate() const {
