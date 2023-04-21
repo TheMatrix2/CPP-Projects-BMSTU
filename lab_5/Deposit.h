@@ -19,15 +19,15 @@ public:
     Deposit(const Deposit & other);
     Deposit(Deposit && other) noexcept;
     ~Deposit();
-    Deposit & operator=(Deposit const & dep2) noexcept;
+    Deposit & operator=(Deposit const & dep2);
     Deposit & operator=(Deposit && dep2) noexcept;
     friend std::ostream & operator<<(std::ostream &out, const Deposit &dep);
     bool operator<(const Deposit & other) const;
-    bool operator==(const Deposit & dep);
-    std::string name() const;
-    double amount() const;
-    std::string currency() const;
-    double rate() const;
+    bool operator==(const Deposit & dep) const;
+    std::string get_name() const;
+    double get_amount() const;
+    std::string get_currency() const;
+    double get_rate() const;
 };
 
 
