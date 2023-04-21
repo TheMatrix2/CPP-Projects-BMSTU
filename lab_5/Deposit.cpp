@@ -43,7 +43,16 @@ std::ostream & operator<<(std::ostream &out, const Deposit &deposit) {
 }
 
 bool Deposit::operator<(const Deposit &other) const{
-    return _name < other._name;
+    if (_name != other._name)
+        return _name < other._name;
+
+    if (_amount != other._amount)
+        return _amount < other._amount;
+
+    if (_currency != other._currency)
+        return _currency < other._currency;
+
+    return _rate < other._rate;
 }
 
 bool Deposit::operator==(const Deposit &dep) const {

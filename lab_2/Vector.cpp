@@ -74,14 +74,14 @@ double & Vector::operator[](int index)
     return arr[index];
 }
 
-Vector Vector::operator++() {
+Vector Vector::operator++() { //prefix
     for (int i = 0; i < this -> n; i++)
         this -> arr[i] += 1.0;
     Vector temp(*this);
     return temp;
 }
 
-Vector Vector::operator++(int) {
+Vector Vector::operator++(int) { //postfix
     Vector temp(*this);
     for (int i = 0; i < this -> n; i++)
         this -> arr[i] = this -> arr[i] + 1.0;

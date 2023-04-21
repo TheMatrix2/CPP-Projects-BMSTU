@@ -1,4 +1,5 @@
 #include "Deposit.h"
+#include <iterator>
 
 bool rate_greater(Deposit & dep1, Deposit & dep2){
     return dep1.get_rate() > dep2.get_rate();
@@ -50,5 +51,7 @@ int main(){
     }
 
     output.close();
+
+    std::copy(depositList.begin(), depositList.end(), std::ostream_iterator<Deposit>(std::cout, " "));
     return 0;
 }

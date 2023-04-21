@@ -20,7 +20,7 @@ Vector_2D::Vector_2D(const Vector_2D &v) {
     y = v.y;
 }
 
-Vector_2D::Vector_2D(Vector_2D && v) {
+Vector_2D::Vector_2D(Vector_2D && v) noexcept {
     x = v.x;
     y = v.y;
     v.x = 0;
