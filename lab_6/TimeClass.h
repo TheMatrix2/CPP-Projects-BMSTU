@@ -26,9 +26,11 @@ public:
 
 
 class InvalidTimeException: public out_of_range {
-    TimeClass _invalidTime;
+    int _h;
+    int _m;
+    int _s;
 public:
-    InvalidTimeException(const string& message, const TimeClass& t);
+    InvalidTimeException(const string& message, int h, int m, int s);
     void print();
 };
 

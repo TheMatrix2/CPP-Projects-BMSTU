@@ -3,7 +3,7 @@
 #include <random>
 
 
-long double random_d(double a, double b){
+double random_d(double a, double b){
     return a + rand() / (b - a + 1.0);
 }
 

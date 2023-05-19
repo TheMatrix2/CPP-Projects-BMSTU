@@ -1,5 +1,15 @@
 #include "TimeClass.h"
 
+InvalidTimeException::InvalidTimeException(const std::string &message, int h, int m, int s) : out_of_range(message) {
+    this->_h = h;
+    this->_m = m;
+    this->_s = s;
+}
+
+void InvalidTimeException::print() {
+    cout << "Exception: " << what() << endl << "Invalid time value: " << _h << ":" << _m << ":" << _s << "\n";
+}
+
 
 TimeClass::TimeClass() {
     _hours = 0;
@@ -9,16 +19,13 @@ TimeClass::TimeClass() {
 
 TimeClass::TimeClass(int h, int m, int s) {
     if (h < 0 || h > 23) {
-        cout << h << "\n";
-        throw out_of_range("Invalid hours value");
+        throw InvalidTimeException("Invalid hours value", h, m, s);
     }
     if (m < 0 || m > 59) {
-        cout << m << "\n";
-        throw out_of_range("Invalid minutes value");
+        throw InvalidTimeException("Invalid minutes value", h, m, s);
     }
     if (s < 0 || s > 59) {
-        cout << s << "\n";
-        throw out_of_range("Invalid seconds value");
+        throw InvalidTimeException("Invalid seconds value", h, m, s);
     }
 
     _hours = h;
@@ -58,13 +65,4 @@ std::ostream & operator<<(std::ostream & out, const TimeClass & time){
     return out;
 }
 
-
-InvalidTimeException::InvalidTimeException(const std::string &message, const TimeClass &t) : out_of_range(message) {
-    this->_invalidTime = t;
-}
-
-void InvalidTimeException::print() {
-    cout << what() << "\nInvalid time value: ";
-    cout << _invalidTime;
-}
 

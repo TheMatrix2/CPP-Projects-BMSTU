@@ -7,5 +7,3 @@ include_directories(.)
 
 add_executable(lab_6
         main.cpp TimeClass.cpp TimeClass.h)
-
-add_executable(test test.cpp)

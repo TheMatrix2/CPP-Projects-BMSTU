@@ -1,1 +1,0 @@
-CMakeLists.txt not found in E:\CLionProjects\sem2\dz_2\attendance Select CMakeLists.txt
