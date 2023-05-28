@@ -1,6 +1,6 @@
 #include <iostream>
 
-using namespace std;
+using namespace std
 
 int random(int a, int b){
     return a + rand() % (b - a + 1);

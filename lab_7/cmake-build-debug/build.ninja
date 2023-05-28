@@ -39,50 +39,141 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = E$:/CLionProjects/sem2/lab_7/cmake-build-debug/
+cmake_ninja_workdir = /home/thematrix/CLionProjects/sem2/lab_7/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target lab_7
+# Object build statements for EXECUTABLE target async
 
 
 #############################################
-# Order-only phony target for lab_7
+# Order-only phony target for async
 
-build cmake_object_order_depends_target_lab_7: phony || CMakeFiles/lab_7.dir
+build cmake_object_order_depends_target_async: phony || CMakeFiles/async.dir
 
-build CMakeFiles/lab_7.dir/main.cpp.obj: CXX_COMPILER__lab_7_Debug E$:/CLionProjects/sem2/lab_7/main.cpp || cmake_object_order_depends_target_lab_7
-  DEP_FILE = CMakeFiles\lab_7.dir\main.cpp.obj.d
+build CMakeFiles/async.dir/main1.cpp.o: CXX_COMPILER__async_Debug /home/thematrix/CLionProjects/sem2/lab_7/main1.cpp || cmake_object_order_depends_target_async
+  DEP_FILE = CMakeFiles/async.dir/main1.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++14
-  INCLUDES = -IE:/CLionProjects/sem2/lab_7/.
-  OBJECT_DIR = CMakeFiles\lab_7.dir
-  OBJECT_FILE_DIR = CMakeFiles\lab_7.dir
-  TARGET_COMPILE_PDB = CMakeFiles\lab_7.dir\
-  TARGET_PDB = lab_7.pdb
+  INCLUDES = -I/home/thematrix/CLionProjects/sem2/lab_7/.
+  OBJECT_DIR = CMakeFiles/async.dir
+  OBJECT_FILE_DIR = CMakeFiles/async.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target lab_7
+# Link build statements for EXECUTABLE target async
 
 
 #############################################
-# Link the executable lab_7.exe
+# Link the executable async
 
-build lab_7.exe: CXX_EXECUTABLE_LINKER__lab_7_Debug CMakeFiles/lab_7.dir/main.cpp.obj
+build async: CXX_EXECUTABLE_LINKER__async_Debug CMakeFiles/async.dir/main1.cpp.o
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\lab_7.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\lab_7.dir\
-  TARGET_FILE = lab_7.exe
-  TARGET_IMPLIB = liblab_7.dll.a
-  TARGET_PDB = lab_7.pdb
+  OBJECT_DIR = CMakeFiles/async.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = async
+  TARGET_PDB = async.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target mutex
+
+
+#############################################
+# Order-only phony target for mutex
+
+build cmake_object_order_depends_target_mutex: phony || CMakeFiles/mutex.dir
+
+build CMakeFiles/mutex.dir/main2.cpp.o: CXX_COMPILER__mutex_Debug /home/thematrix/CLionProjects/sem2/lab_7/main2.cpp || cmake_object_order_depends_target_mutex
+  DEP_FILE = CMakeFiles/mutex.dir/main2.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  INCLUDES = -I/home/thematrix/CLionProjects/sem2/lab_7/.
+  OBJECT_DIR = CMakeFiles/mutex.dir
+  OBJECT_FILE_DIR = CMakeFiles/mutex.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mutex
+
+
+#############################################
+# Link the executable mutex
+
+build mutex: CXX_EXECUTABLE_LINKER__mutex_Debug CMakeFiles/mutex.dir/main2.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/mutex.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = mutex
+  TARGET_PDB = mutex.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target mutex-g
+
+
+#############################################
+# Order-only phony target for mutex-g
+
+build cmake_object_order_depends_target_mutex-g: phony || CMakeFiles/mutex-g.dir
+
+build CMakeFiles/mutex-g.dir/main3.cpp.o: CXX_COMPILER__mutex-g_Debug /home/thematrix/CLionProjects/sem2/lab_7/main3.cpp || cmake_object_order_depends_target_mutex-g
+  DEP_FILE = CMakeFiles/mutex-g.dir/main3.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  INCLUDES = -I/home/thematrix/CLionProjects/sem2/lab_7/.
+  OBJECT_DIR = CMakeFiles/mutex-g.dir
+  OBJECT_FILE_DIR = CMakeFiles/mutex-g.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mutex-g
+
+
+#############################################
+# Link the executable mutex-g
+
+build mutex-g: CXX_EXECUTABLE_LINKER__mutex-g_Debug CMakeFiles/mutex-g.dir/main3.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/mutex-g.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = mutex-g
+  TARGET_PDB = mutex-g.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target con-var
+
+
+#############################################
+# Order-only phony target for con-var
+
+build cmake_object_order_depends_target_con-var: phony || CMakeFiles/con-var.dir
+
+build CMakeFiles/con-var.dir/main4.cpp.o: CXX_COMPILER__con-var_Debug /home/thematrix/CLionProjects/sem2/lab_7/main4.cpp || cmake_object_order_depends_target_con-var
+  DEP_FILE = CMakeFiles/con-var.dir/main4.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  INCLUDES = -I/home/thematrix/CLionProjects/sem2/lab_7/.
+  OBJECT_DIR = CMakeFiles/con-var.dir
+  OBJECT_FILE_DIR = CMakeFiles/con-var.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target con-var
+
+
+#############################################
+# Link the executable con-var
+
+build con-var: CXX_EXECUTABLE_LINKER__con-var_Debug CMakeFiles/con-var.dir/main4.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/con-var.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = con-var
+  TARGET_PDB = con-var.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D E:\CLionProjects\sem2\lab_7\cmake-build-debug && "E:\CLion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cd /home/thematrix/CLionProjects/sem2/lab_7/cmake-build-debug && /snap/clion/237/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -93,7 +184,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D E:\CLionProjects\sem2\lab_7\cmake-build-debug && "E:\CLion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SE:\CLionProjects\sem2\lab_7 -BE:\CLionProjects\sem2\lab_7\cmake-build-debug"
+  COMMAND = cd /home/thematrix/CLionProjects/sem2/lab_7/cmake-build-debug && /snap/clion/237/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/thematrix/CLionProjects/sem2/lab_7 -B/home/thematrix/CLionProjects/sem2/lab_7/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -103,17 +194,15 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build lab_7: phony lab_7.exe
-
 # =============================================================================
 # Folder targets.
 
 # =============================================================================
 
 #############################################
-# Folder: E:/CLionProjects/sem2/lab_7/cmake-build-debug
+# Folder: /home/thematrix/CLionProjects/sem2/lab_7/cmake-build-debug
 
-build all: phony lab_7.exe
+build all: phony async mutex mutex-g con-var
 
 # =============================================================================
 # Built-in targets
@@ -122,14 +211,14 @@ build all: phony lab_7.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake E$:/CLionProjects/sem2/lab_7/CMakeLists.txt E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCCompilerABI.c E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCompilerIdDetection.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCXXCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineRCCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeParseImplicitIncludeInfo.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeParseImplicitLinkInfo.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeParseLibraryArchitecture.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCCompiler.cmake.in E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystem.cmake.in E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeTestCXXCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeTestCompilerCommon.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeTestRCCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/ADSP-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/ARMCC-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/ARMClang-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/AppleClang-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Borland-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Bruce-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompilerInternal.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Compaq-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Cray-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Embarcadero-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Fujitsu-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GHS-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-FindBinUtils.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/HP-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/HP-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IAR-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Intel-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/LCC-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/MSVC-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/NVHPC-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/NVIDIA-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/PGI-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/PathScale-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/SCO-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/SDCC-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/SunPro-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/TI-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Tasking-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Watcom-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/XL-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/XL-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/XLClang-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/zOS-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-Determine-CXX.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | /home/thematrix/CLionProjects/sem2/lab_7/CMakeLists.txt /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake E$:/CLionProjects/sem2/lab_7/CMakeLists.txt E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCCompilerABI.c E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCompilerIdDetection.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCXXCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineRCCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeParseImplicitIncludeInfo.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeParseImplicitLinkInfo.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeParseLibraryArchitecture.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCCompiler.cmake.in E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystem.cmake.in E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeTestCXXCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeTestCompilerCommon.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeTestRCCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/ADSP-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/ARMCC-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/ARMClang-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/AppleClang-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Borland-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Bruce-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompilerInternal.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Compaq-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Cray-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Embarcadero-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Fujitsu-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GHS-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-FindBinUtils.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/HP-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/HP-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IAR-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Intel-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/LCC-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/MSVC-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/NVHPC-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/NVIDIA-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/PGI-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/PathScale-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/SCO-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/SDCC-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/SunPro-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/TI-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Tasking-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/Watcom-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/XL-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/XL-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/XLClang-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/zOS-C-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-Determine-CXX.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake E$:/CLion/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake: phony
+build /home/thematrix/CLionProjects/sem2/lab_7/CMakeLists.txt /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake /snap/clion/237/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
 
 
 #############################################
