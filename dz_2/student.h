@@ -5,6 +5,10 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <codecvt>
+#include <locale>
+#include <io.h>
+#include <fcntl.h>
 
 using namespace std;
 
@@ -12,12 +16,14 @@ using namespace std;
 class Student
 {
     string name;
-    vector<vector<string>> marks;
+    vector<string> marks;
+//    vector<vector<string>> marks;
 public:
     Student();
-    Student(string name, vector<vector<string>> marks);
+    Student(string name, vector<string> marks);
     string get_name();
-    vector<vector<string>> get_marks();
+    vector<string> get_marks();
+    void set_marks(vector<string> vec);
 };
 
 #endif // STUDENT_H

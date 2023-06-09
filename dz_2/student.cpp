@@ -2,9 +2,10 @@
 
 Student::Student(){
     name = nullptr;
+    marks = {};
 }
 
-Student::Student(string name, vector<vector<string>> marks){
+Student::Student(string name, vector<string> marks){
     this -> name = name;
     this -> marks = marks;
 }
@@ -13,6 +14,10 @@ string Student::get_name(){
     return name;
 }
 
-vector<vector<string>> Student::get_marks(){
+vector<string> Student::get_marks(){
     return marks;
+}
+
+void Student::set_marks(vector<string> vec){
+    this -> marks = vec;
 }

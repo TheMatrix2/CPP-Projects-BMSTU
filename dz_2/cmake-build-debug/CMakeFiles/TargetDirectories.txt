@@ -1,3 +1,0 @@
-E:/CLionProjects/sem2/dz_2/cmake-build-debug/CMakeFiles/dz2.dir
-E:/CLionProjects/sem2/dz_2/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/CLionProjects/sem2/dz_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
