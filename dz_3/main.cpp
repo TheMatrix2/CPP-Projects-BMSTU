@@ -24,6 +24,8 @@ int main(int argc, char* argv[]) {
                     cout << "       to execute text file or file with language extension\n";
                     cout << "--read     <filename>\n";
                     cout << "       to read file content";
+                    cout << "--addln    <filename>     <line>\n";
+                    cout << "       to add line to end of file";
                     continue;
                 }
                 case 2: {
