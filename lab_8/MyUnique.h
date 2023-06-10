@@ -44,10 +44,4 @@ public:
     }
 };
 
-template<typename T, typename...Args>
-T* Make_MyUnique(Args&& ... args)
-{
-    return new T(forward<Args>(args)...);
-}
-
 #endif //LAB_8_MYUNIQUE_H

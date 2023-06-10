@@ -7,7 +7,7 @@ map<string, int> init(){
     commands["--exit"] = 2;
     commands["--run"] = 3;
     commands["--read"] = 4;
-    commands["--cd"] = 5;
+    commands["--addln"] = 5;
 
     cout << "\n==================================================================\n";
     cout << "Welcome to tri-compiler! Print --help to check available commands.";
@@ -85,19 +85,35 @@ void run_txt(string filename){
 }
 
 void run(string flag, string filename){
-    string r;
-    if (flag == "-py")
-        r = "python3 " + filename;
-    if (flag == "-c")
-        r = "g++ " + filename + " -o temp.out && ./temp.out";
-    if (flag == "-kt")
-        r = "kotlin " + filename + " -include-runtime -d temp.jar && java -jar temp.jar";
+    string l;
+    string code;
+    ifstream file(filename);
+    while (getline(file, l))
+        code += l;
 
-    int result = system(r.c_str());
-    if (result != 0) {
-        cout << "Error: command failed with exit code " << result << endl;
-        return;
+    if (flag == "-py"){
+        Python p(code);
+        p.compile();
+    }
+    if (flag == "-c") {
+        C p(code);
+        p.compile();
+    }
+    if (flag == "-kt") {
+        Kotlin p(code);
+        p.compile();
     }
 
-    cout << "\nProgram executed successfully" << endl;
+
+}
+
+void add_line(string filename, string line){
+//    if (line.find("/n") != line.size()){
+//        cout << "\n'" << line << "' is not a line\n";
+//        return;
+//    }
+    ofstream file(filename, ios::app);
+    if (file.is_open()){
+        file << "\n" << line << "\n";
+    }
 }

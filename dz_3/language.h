@@ -8,27 +8,38 @@
 using namespace std;
 
 class Language {
+    string code;
 public:
     virtual void compile();
+    void add_line(string line);
 };
 
 
 class Python : public Language{
-    string filename;
+    string code;
 
 public:
-    Python(string filename);
+    Python(string & code);
     ~Python();
     void compile() override;
 };
 
 class C: public Language{
-    string filename;
+    string code;
 
 public:
-    C(string filename);
+    C(string & code);
     ~C();
     void compile();
+};
+
+class Kotlin : public Language {
+    string code;
+
+public:
+    Kotlin(string & code);
+    ~Kotlin();
+    void compile() override;
 };
 
 #endif

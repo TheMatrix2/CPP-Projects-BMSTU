@@ -22,13 +22,14 @@ int main(){
 // Vol. 2 - MyShared
     MyShared<Auto> ms1 = MyShared<Auto>(Make_MyShared<Auto>("Ford", 200));
     cout << ms1 -> getMaxSpeed() << endl;
-
-    MyShared<Auto> ms2(ms1);
-    cout << ms2 -> getBrand() << endl;
+    {
+        MyShared<Auto> ms2(ms1);
+        cout << ms2->getBrand() << endl;
+        cout << ms1.getCount() << endl;
+    }
     cout << ms1.getCount() << endl;
-
     MyShared<Auto> ms3;
-    ms3 = ms2;
+    ms3 = ms1;
     cout << ms3 -> getMaxSpeed() << endl;
     return 0;
 }
