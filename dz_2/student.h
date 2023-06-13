@@ -7,7 +7,6 @@
 #include <fstream>
 #include <codecvt>
 #include <locale>
-#include <io.h>
 #include <fcntl.h>
 
 using namespace std;

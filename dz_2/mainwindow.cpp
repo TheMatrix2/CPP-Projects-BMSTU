@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+string path_to_db = "/home/thematrix/TheMatrix2/sem2/dz_2/database.csv"; //change path to database.csv for your device
+
 // вспомогательная функция для разделения строки по заданному символу
 vector<string> split(const string& s, char separator){
     vector<string> output;
@@ -18,12 +20,12 @@ vector<string> split(const string& s, char separator){
     return output;
 }
 
-// чтение файла с базой
+// чтение исходного файла
 vector<Student> read_file(){
     const locale utf8_locale = locale(locale(), new codecvt_utf8<wchar_t>());
     locale::global(utf8_locale);
 
-    ifstream file("F:/untitled/database.csv");
+    ifstream file(path_to_db);
     file.imbue(utf8_locale);
     string line;
     vector<Student> students;
@@ -59,7 +61,7 @@ void write_file(vector<Student> vec){
 
     ofstream file;
     file.imbue(utf8_locale);
-    file.open("F:/untitled/database.csv");
+    file.open(path_to_db);
     file << ";1;2;3;4;5;6;7;8" << endl;
     for (Student i : vec){
         file << i.get_name();
@@ -113,8 +115,12 @@ void MainWindow::on_addButton_clicked()
 // нажатие кнопки "сохранить"
 void MainWindow::on_saveButton_clicked()
 {
-    if (ui->studentBox->currentIndex() == 0 || ui->studentBox->currentIndex() == 1 || ui->markBox->currentIndex() == 0 || ui->markBox->currentIndex() == 1 || ui->seminarBox->currentIndex() == 0 || ui->seminarBox->currentIndex() == 1)
+    if (ui->studentBox->currentIndex() == 0 || ui->studentBox->currentIndex() == 1 ||
+            ui->markBox->currentIndex() == 0 || ui->markBox->currentIndex() == 1 ||
+            ui->seminarBox->currentIndex() == 0 || ui->seminarBox->currentIndex() == 1){
         QMessageBox::critical(this, "Ошибка", "Заполните все поля");
+        return;
+    }
     string name = ui->studentBox->currentText().toStdString();
     string mark = ui->markBox->currentText().toStdString();
 
