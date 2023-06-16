@@ -36,14 +36,14 @@ void sort_vec(const string & name, vector<double>& vec, int start, int end) {
 
     unique_lock<mutex> lk(m);
 
-    if (name == "thread1") {
+    if (name == "thread 1") {
         thread1_finished = true;
-        cout << "\nThread 1 finished sorting first half of array\n";
-    } else if (name == "thread2") {
+        cout << "Thread 1 finished sorting first half of array\n";
+    } else if (name == "thread 2") {
         thread2_finished = true;
-        cout << "\nThread 2 finished sorting second half of array\n";
+        cout << "Thread 2 finished sorting second half of array\n";
     } else {
-        cout << "\nmain() finished sorting entire array\n";
+        cout << "main() finished sorting entire array\n";
     }
     lk.unlock();
     cv.notify_one();
@@ -66,37 +66,20 @@ int main(){
         vec.push_back(random(0.0, 100.0));
         cout << "main: " << vec[i] << endl;
     }
-    cout << endl;
+    cout << "\n";
 
-    thread th1([&vec]{
-        sort_vec("thread1", vec, 0, vec.size()/2);
-    });
-    thread th2([&vec]{
-        sort_vec("thread2", vec,  vec.size()/2, vec.size() - 1);
-    });
+    thread th1(sort_vec, "thread 1", ref(vec), 0, 4);
+    thread th2(sort_vec, "thread 2", ref(vec), 4, 9);
+    th1.join();
+    th2.join();
 
-    th1.detach();
-    th2.detach();
     {
         unique_lock<mutex> lk(m);
         cv.wait(lk, [] { return thread1_finished && thread2_finished; });
     }
-
-//    th1.join();
-//    th2.join();
-
-    cout << "\nreturn to main()\n" << endl;
-//    for (int i = 0; i < vec.size(); i++) {
-//        int min_idx = i;
-//        for (int j = i + 1; j < vec.size(); j++) {
-//            if (vec[j] < vec[min_idx]) {
-//                min_idx = j;
-//            }
-//        }
-//        swap(vec[i], vec[min_idx]);
-//        cout << "main: " << vec[i] << endl;
-//    }
-    sort_full("main", vec);
+    cout << "\n";
+    thread th3(sort_full, "thread 3", ref(vec));
+    th3.join();
 
     return 0;
 }

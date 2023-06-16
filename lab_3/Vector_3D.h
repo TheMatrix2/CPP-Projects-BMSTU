@@ -18,5 +18,4 @@ public:
     double length();
 };
 
-
 #endif //LAB_3_VECTOR_3D_H

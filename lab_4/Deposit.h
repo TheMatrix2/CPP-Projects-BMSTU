@@ -24,7 +24,6 @@ public:
     friend std::ostream & operator<<(std::ostream &out, const Deposit &vec);
     bool operator<(const Deposit & other);
     double get_rate() const;
-    std::string get_name() const;
 };
 
 #endif //LAB_4_DEPOSIT_H

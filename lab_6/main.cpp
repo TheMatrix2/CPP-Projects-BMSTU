@@ -6,7 +6,7 @@ int main(){
         TimeClass t2(10, 59, 40);
         cout << t2 << "\n";
         // error
-        TimeClass t1(8, 70, 60);
+        TimeClass t1(8, 70, 50);
         cout << t1 << "\n";
     }
 
@@ -14,15 +14,11 @@ int main(){
         e.print();
     }
 
-    this_thread::sleep_for(chrono::seconds(10));
-
-    TimeClass t(0, 0, 0);
-    for (int i = 0; i < 60; i++){
-        system("cls");
-        std::cout << t;
-        t.tick();
-        this_thread::sleep_for(chrono::seconds(1));
-    }
+    cout << "\ncontinue\n";
+    TimeClass t(23, 59, 59);
+    cout << t << "\n";
+    t.tick();
+    cout << t;
 
     return 0;
 }

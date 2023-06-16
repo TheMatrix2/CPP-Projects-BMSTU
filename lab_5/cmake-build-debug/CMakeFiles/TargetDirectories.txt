@@ -1,4 +1,4 @@
-/home/thematrix/CLionProjects/sem2/lab_5/cmake-build-debug/CMakeFiles/lab_5.dir
-/home/thematrix/CLionProjects/sem2/lab_5/cmake-build-debug/CMakeFiles/fill.dir
-/home/thematrix/CLionProjects/sem2/lab_5/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/thematrix/CLionProjects/sem2/lab_5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/thematrix/TheMatrix2/sem2/lab_5/cmake-build-debug/CMakeFiles/lab_5.dir
+/home/thematrix/TheMatrix2/sem2/lab_5/cmake-build-debug/CMakeFiles/fill.dir
+/home/thematrix/TheMatrix2/sem2/lab_5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/thematrix/TheMatrix2/sem2/lab_5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

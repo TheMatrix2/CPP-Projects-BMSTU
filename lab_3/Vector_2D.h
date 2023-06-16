@@ -23,5 +23,4 @@ public:
     double length();
 };
 
-
 #endif //LAB_3_VECTOR_2D_H

@@ -1,4 +1,5 @@
 /home/thematrix/TheMatrix2/sem2/lab_7/cmake-build-debug/CMakeFiles/async.dir
+/home/thematrix/TheMatrix2/sem2/lab_7/cmake-build-debug/CMakeFiles/future.dir
 /home/thematrix/TheMatrix2/sem2/lab_7/cmake-build-debug/CMakeFiles/mutex.dir
 /home/thematrix/TheMatrix2/sem2/lab_7/cmake-build-debug/CMakeFiles/mutex-g.dir
 /home/thematrix/TheMatrix2/sem2/lab_7/cmake-build-debug/CMakeFiles/con-var.dir

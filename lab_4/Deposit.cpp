@@ -8,18 +8,18 @@ Deposit::Deposit(){
 }
 
 Deposit::Deposit(std::string name, double amount, std::string currency, double rate){
-    this -> _name = name;
+    this -> _name = std::move(name);
     this -> _amount = amount;
-    this -> _currency = currency;
+    this -> _currency = std::move(currency);
     this -> _rate = rate;
 }
 
-Deposit::Deposit(const Deposit& other)=default; //: _name(other._name), _amount(other._amount), _currency(other._currency), _rate(other._rate){}
+Deposit::Deposit(const Deposit& other)=default;
 
-Deposit::Deposit(Deposit && other) noexcept: _name(std::move(other._name)),_amount(std::move(other._amount)),
-                                    _currency(std::move(other._currency)), _rate(std::move(other._rate)) {}
+Deposit::Deposit(Deposit && other) noexcept: _name(std::move(other._name)),_amount(other._amount),
+                                    _currency(std::move(other._currency)), _rate(other._rate) {}
 
-Deposit::~Deposit() {}
+Deposit::~Deposit() = default;
 
 Deposit &Deposit::operator=(Deposit const & other) noexcept {
     if (&other != this){
@@ -47,13 +47,18 @@ std::ostream & operator<<(std::ostream &out, const Deposit &deposit) {
 }
 
 bool Deposit::operator<(const Deposit &other) {
-    return _name > other._name;
+    if (_name != other._name)
+        return _name < other._name;
+
+    if (_amount != other._amount)
+        return _amount < other._amount;
+
+    if (_currency != other._currency)
+        return _currency < other._currency;
+
+    return _rate < other._rate;
 }
 
 double Deposit::get_rate() const {
     return _rate;
-}
-
-std::string Deposit::get_name() const {
-    return _name;
 }

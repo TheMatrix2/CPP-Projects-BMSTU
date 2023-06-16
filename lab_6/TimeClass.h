@@ -2,8 +2,6 @@
 #define LAB_6_TIMECLASS_H
 
 #include <iostream>
-#include <chrono>
-#include <thread>
 #include <stdexcept>
 
 using namespace std;
@@ -33,6 +31,5 @@ public:
     InvalidTimeException(const string& message, int h, int m, int s);
     void print();
 };
-
 
 #endif //LAB_6_TIMECLASS_H

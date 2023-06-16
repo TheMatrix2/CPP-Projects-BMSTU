@@ -1,4 +1,4 @@
-E:/CLionProjects/sem2/lab_3/cmake-build-debug/CMakeFiles/lab_3.dir
-E:/CLionProjects/sem2/lab_3/cmake-build-debug/CMakeFiles/test.dir
-E:/CLionProjects/sem2/lab_3/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/CLionProjects/sem2/lab_3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/thematrix/TheMatrix2/sem2/lab_3/cmake-build-debug/CMakeFiles/lab_3.dir
+/home/thematrix/TheMatrix2/sem2/lab_3/cmake-build-debug/CMakeFiles/test.dir
+/home/thematrix/TheMatrix2/sem2/lab_3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/thematrix/TheMatrix2/sem2/lab_3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

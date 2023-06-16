@@ -1,8 +1,8 @@
 #include "Deposit.h"
 
-int main(int argc, char * argv[]){
-    std::string input_file = argv[1];
-    std::string output_file = argv[2];
+int main(){
+    std::string input_file = "input.txt";
+    std::string output_file = "output.txt";
 
     //открытие входного файла
     std::ifstream input(input_file);

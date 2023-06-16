@@ -7,8 +7,6 @@ Vector_3D::Vector_3D() : Vector_2D() {
 }
 
 Vector_3D::Vector_3D(double x, double y, double z) : Vector_2D(x, y){
-//    this -> x = x;
-//    this -> y = y;
     this -> z = z;
 }
 

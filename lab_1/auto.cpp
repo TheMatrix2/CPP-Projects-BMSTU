@@ -17,3 +17,4 @@ void Auto::print() {
 int Auto::get() {
     return this -> max_speed;
 }
+

@@ -1,4 +1,4 @@
-# Install script for directory: /home/thematrix/CLionProjects/sem2/lab_6
+# Install script for directory: /home/thematrix/TheMatrix2/sem2/lab_6
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/thematrix/CLionProjects/sem2/lab_6/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/thematrix/TheMatrix2/sem2/lab_6/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

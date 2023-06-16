@@ -3,7 +3,6 @@
 #include <iostream>
 using namespace std;
 
-
 class Vector {
 public:
     int n;
@@ -24,6 +23,5 @@ public:
     double & operator[](int index);
     void print();
 };
-
 
 #endif //LAB_2_VECTOR_HPP
